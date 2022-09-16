@@ -24,12 +24,12 @@ const Register = ({ setToken, navigate }) => {
       event.preventDefault();
       handleSubmit();
     }}>
-      <input className='searchInput'
+      <input className='register'
         type='text'
         placeholder='Enter Username'
         onChange={(event) => setUsername(event.target.value)}
       />
-      <input 
+      <input className='register'
         type='password'
         placeholder='Enter Password'
         onChange={(event) => setPassword(event.target.value)}

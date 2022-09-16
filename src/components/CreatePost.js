@@ -24,7 +24,7 @@ const CreatePost = ({ token, fetchPosts, navigate }) => {
   
   return (
     // This needs to be a form that accepts the 5 request parameters for creating a post
-    <form onSubmit={(ev) => {
+    <form className="create" onSubmit={(ev) => {
       ev.preventDefault();
       addPost();
     }}>

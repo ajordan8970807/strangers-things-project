@@ -60,7 +60,6 @@ body {
 }
 
 .loginForm{
-  flex-wrap: wrap;
   margin: 2em;
 }
 
@@ -73,3 +72,21 @@ body {
   box-sizing: border-box;
 }
 
+.register {
+  float: right;
+  text-align: center;
+  margin: 0;
+  padding: 6px;
+  border: solid 2px black;
+  margin-top: 8px;
+  font-size: 17px;
+}
+
+.create {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
