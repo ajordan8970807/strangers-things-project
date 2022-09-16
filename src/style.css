@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  font-weight: bold;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: none;
+}  
+
+.title {
+  font-size: 50px;
+}
+
+body {
+  text-align: center;
+  display:flex;
+  align-items: center;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  height: 4rem;
+  background-size: cover;
+  box-shadow: 4px 3px 12px 2px rgba(0,0,0,0.78);
+}
+
+.navLinks {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.searchInput {
+    float: right;
+    text-align: center;
+    margin: 0;
+    padding: 6px;
+    border: solid 2px black;
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.search {
+  height: 200px;
+  width: 40rem;
+}
+
+.btn {
+  border: solid 2px;
+  color: rgb(3, 91, 121);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+.loginForm{
+  flex-wrap: wrap;
+  margin: 2em;
+}
+
+.login {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
