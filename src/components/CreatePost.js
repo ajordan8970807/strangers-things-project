@@ -24,37 +24,39 @@ const CreatePost = ({ token, fetchPosts, navigate }) => {
   
   return (
     // This needs to be a form that accepts the 5 request parameters for creating a post
-    <form className="create" onSubmit={(ev) => {
+    <form className='create' onSubmit={(ev) => {
       ev.preventDefault();
       addPost();
     }}>
 
-      <input 
+      <input className='createInput'
         type='text'
         placeholder="title"
         onChange={(ev) => setNewTitle(ev.target.value)}
       />
-      <input 
+      <input className='createInput'
         type='text'
         placeholder="description"
         onChange={(ev) => setNewDesc(ev.target.value)}
       />
-      <input 
+      <input className='createInput'
         type='text'
         placeholder="location"
         onChange={(ev) => setNewLocation(ev.target.value)}
       />
-      <input 
+      <input className='createInput'
         type='text'
         placeholder="price"
         onChange={(ev) => setNewPrice(ev.target.value)}
       />
-      <input 
-        type='checkbox'
-        checked="newWillDeliver"
-        onChange={(ev) => setNewWillDeliver(ev.target.checked)}
-      />
-      <button id="btn" type='submit'>Submit</button>
+      <label>Will Deliver
+        <input 
+          type='checkbox'
+          checked="newWillDeliver"
+          onChange={(ev) => setNewWillDeliver(ev.target.checked)}
+        />
+      </label>
+      <button id="btn" type='submit'>Post it up!!</button>
       <br></br>
       <button id="btn"type='submit' onClick={() =>{deletePost(token, postID);
       }}>Delete This!!</button>
